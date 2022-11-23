@@ -5,6 +5,8 @@
   --veryPaleCyan: hsl(193, 100%, 96%);
   --veryDarkCyan: hsl(192, 100%, 9%);
   --grayishBlue: hsl(208, 11%, 55%);
+  --grayishBlueShadow: hsla(209, 11%, 55%, 0.15);
+  --white: hsl(0, 0%, 100%);
   /*  Fonts */
   --poppins: "Poppins", sans-serif;
   --openSans: "Open Sans", sans-serif;
@@ -12,10 +14,99 @@
   --fw500: 500;
   --fw700: 700;
   --fs: 18px;
+  --fsmobile: 16px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: var(--openSans);
+  font-weight: var(--fw400);
+  font-size: var(--fsmobile);
+  background-color: var(--veryPaleCyan);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 375px;
+  background-image: url(images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: 20px;
+}
+
+.button {
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-family: var(--openSans);
+  font-weight: var(--fw700);
+  font-size: 13px;
+}
+
+.button-header {
+  background-color: var(--white);
+  width: 105px;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--veryDarkCyan);
+  box-shadow: 0 2px 5px 1px var(--grayishBlueShadow);
+}
+
+.container {
+  /* display: flex; */
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  padding: 25px;
+}
+
+.section1 > h1 {
+  font-size: 24px;
+  font-family: var(--openSans);
+  margin: 20px 0;
+}
+
+.section1 > p {
+  font-family: var(--openSans);
+  font-weight: var(--fw400);
+  margin: 0 0 30px;
+  /* padding: 0 5px; */
+}
+
+.button-pink {
+  width: 80%;
+}
+
+.illustration {
+  display: block;
+  width: 100%;
+  /* height: 200px; */
 }
