@@ -91,14 +91,14 @@ a {
   text-align: center;
 }
 
-.description > h1 {
+.description h1 {
   margin: 1.25rem 0;
   font-size: 1.5rem;
   font-family: var(--poppins);
   color: var(--veryDarkCyan);
 }
 
-.description > p {
+.description p {
   margin: 0 0 1.875rem;
   font-family: var(--openSans);
   color: var(--veryDarkCyan);
@@ -152,21 +152,21 @@ a {
   margin-top: 3.75rem;
 }
 
-.box-description > h2 {
+.box-description h2 {
   margin-bottom: 1.25rem;
   font-size: 1.375rem;
   font-family: var(--poppins);
   color: var(--veryDarkCyan);
 }
 
-.box-description > p {
+.box-description p {
   padding: 0 0.75rem;
   font-size: 0.875rem;
   line-height: 1.5;
   color: var(--grayishBlue);
 }
 
-.box-description > .users-paragraph {
+.box-description .users-paragraph {
   padding: 0 1rem;
 }
 
@@ -177,15 +177,14 @@ a {
 
 .ready-box {
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 50%;
   top: 50%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   gap: 0.938rem;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   margin: 0 auto;
   box-shadow: var(--boxShadow);
   border-radius: 0.938rem;
@@ -196,7 +195,7 @@ a {
   text-align: center;
 }
 
-.ready-box > h1 {
+.ready-box h1 {
   margin-bottom: 1.25rem;
   font-size: 1.125rem;
   font-family: var(--poppins);
@@ -226,6 +225,7 @@ footer {
   margin-bottom: 0.938rem;
   width: auto;
   height: 1.563rem;
+  -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
 }
 
@@ -233,7 +233,7 @@ footer {
   margin: 2.5rem 0 0;
 }
 
-.footer-section > ul {
+.footer-section ul {
   list-style: none;
 }
 
@@ -241,7 +241,7 @@ footer {
   font-size: 0.938rem;
 }
 
-.contact > ul > li {
+.contact ul li {
   display: flex;
   flex-direction: row;
   gap: 1.25rem;
@@ -264,7 +264,7 @@ footer {
   font-size: 1rem;
 }
 
-.navigation > ul {
+.navigation ul {
   display: flex;
   flex-direction: column;
   gap: 0.938rem;
@@ -283,7 +283,7 @@ footer {
   width: 50%;
 }
 
-.social-icons > a {
+.social-icons a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -356,14 +356,14 @@ footer {
     text-align: left;
   }
 
-  .description > h1 {
+  .description h1 {
     margin: 0;
     padding-right: 3.75rem;
     font-size: 2.25rem;
     line-height: 1.5;
   }
 
-  .description > p {
+  .description p {
     margin: 0;
   }
 
@@ -416,21 +416,21 @@ footer {
     text-align: left;
   }
 
-  .box-description > h2 {
+  .box-description h2 {
     margin-bottom: 1.25rem;
     padding: 0 0.75rem;
     font-size: 2rem;
     color: var(--veryDarkCyan);
   }
 
-  .box-description > p {
+  .box-description p {
     margin-right: 8.75rem;
     font-size: var(--fs);
     line-height: 1.5;
     color: var(--grayishBlue);
   }
 
-  .box-description > .users-paragraph {
+  .box-description .users-paragraph {
     padding: 0 1rem;
   }
 
@@ -439,19 +439,19 @@ footer {
     margin: 2.5rem 0 0;
   }
 
-  .box-flowing > div > .box-img {
+  .box-flowing div .box-img {
     padding-left: 8.75rem;
   }
 
-  .box-flowing > .box-description {
+  .box-flowing .box-description {
     padding: 0 1.563rem 5.938rem 5rem;
   }
 
-  .box-flowing > .box-description > h2 {
+  .box-flowing .box-description h2 {
     padding: 0 0.75rem;
   }
 
-  .box-flowing > .box-description > p {
+  .box-flowing .box-description p {
     margin-right: 0.625rem;
   }
 
@@ -461,7 +461,7 @@ footer {
     padding: 1.25rem;
   }
 
-  .ready-box > h1 {
+  .ready-box h1 {
     margin-bottom: 1.25rem;
     font-size: 1.75rem;
   }
@@ -493,7 +493,7 @@ footer {
     font-size: 1rem;
   }
 
-  .contact > ul > li {
+  .contact ul li {
     gap: 1.25rem;
     padding: 0.625rem 0;
   }
@@ -518,13 +518,13 @@ footer {
     font-size: 0.875rem;
   }
 
-  .navigation > ul {
+  .navigation ul {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
   }
 
-  .navigation > ul > li:hover {
+  .navigation ul li:hover {
     cursor: pointer;
     text-decoration: underline;
   }
@@ -540,7 +540,7 @@ footer {
     width: 50%;
   }
 
-  .social-icons > a:hover {
+  .social-icons a:hover {
     border-color: var(--pink);
     color: var(--pink);
   }
